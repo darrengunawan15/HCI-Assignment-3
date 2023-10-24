@@ -49,10 +49,27 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--button-background-color);
+    cursor: pointer;
+}
+
+.header-container .header-container-right .header-notification .badge{
+    position: absolute;
+    top: 6px;
+    right: 94px;
+    padding: 4px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    background: red;
+    color: white;
 }
 
 .header-container .header-container-right .header-notification i{
     font-size: 32px;
+}
+
+.header-container .header-container-right .header-notification:hover i{
+    transform: scale(1.05);
+    transition: 0.2s ease;
 }
 
 .header-container .header-container-right .header-profile img{
@@ -80,8 +97,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 36px 0px 0px 0px;
+    justify-content: left;
+    margin: 36px 0px 20px 20px;
     flex-wrap: wrap;
 }
 
@@ -138,6 +155,42 @@ body{
     font-size: 48px;
 }
 
+@media only screen and (max-width: 500px) {
+    .body-container .card-container .card-type-1{
+        width: 100%;
+        max-width: 80vw;
+    }
+}
+
+.body-container .card-chooser{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px 0px 0px 20px;
+}
+
+.body-container .card-chooser{
+    padding-top: 4px;
+}
+
+.body-container .card-chooser ul li{
+    background-color: gray;
+    margin-right: 10px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.body-container .card-chooser ul li:hover{
+    cursor: pointer;
+}
+
+.body-container .card-chooser ul li.active{
+    color: #FFF;
+    background-color: var(--card-background-color);
+}
+
 .body-container .bank-menu{
     margin: 30px 0px 0px 10px;
     display: flex;
@@ -149,6 +202,15 @@ body{
     flex-direction: column;
     margin: 0px 20px 0px 0px;
     text-align: center;
+}
+
+.body-container .bank-menu .menu-caption:hover .menu-container{
+    background-color: var(--card-background-color);
+}
+
+.body-container .bank-menu .menu-caption:hover i{
+    transform: scale(1.1);
+    transition: 0.2s ease;
 }
 
 .body-container .bank-menu .menu-caption .menu-container{
@@ -183,6 +245,7 @@ body{
     font-size: 16px;
     padding: 0px 10px 0px 0px;
     color: var(--sub-text-color);
+    cursor: pointer;
 }
 
 .body-container .transactions-container .transactions-card{
@@ -215,6 +278,10 @@ body{
 
 .body-container .transactions-container .transactions-card .card-type-2 .card-type-2-left .user-info{
     margin: 0px 0px 0px 20px;
+}
+
+.body-container .transactions-container .hidden-transactions{
+    display: none;
 }
 
 @media only screen and (max-width:600px) {
