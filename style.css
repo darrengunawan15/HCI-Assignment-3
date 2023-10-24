@@ -67,6 +67,10 @@ body{
     font-size: 32px;
 }
 
+.header-container .header-container-right .header-notification:hover{
+    background-color: var(--card-background-color);
+}
+
 .header-container .header-container-right .header-notification:hover i{
     transform: scale(1.05);
     transition: 0.2s ease;
