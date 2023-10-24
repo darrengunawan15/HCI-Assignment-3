@@ -102,7 +102,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 36px 0px 20px 20px;
+    margin: 36px 0px 20px 16px;
     flex-wrap: wrap;
 }
 
@@ -130,6 +130,17 @@ body{
 
 .body-container .card-container .card-type-1 .card-type-1-header img{
     width: 100px;
+}
+
+.body-container .card-container .card-type-1 .card-balance{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body-container .card-container .card-type-1 .card-balance i{
+    font-size: 28px;
 }
 
 .body-container .card-container .card-type-1 .card-type-1-details{
